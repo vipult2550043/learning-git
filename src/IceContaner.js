@@ -13,9 +13,9 @@ function IceContaner(props) {
     )
 }
 //ownProps will contain the props of the IceContainer component and which will be passed from App.js inside <IceConatiner ice={"ice"}>
-const MapStateToProps = (state,ownProps) => {
+const MapStateToProps = (state, ownProps) => {
     console.log(ownProps.ice ? "true" : "false");
-    
+
     return {
         noOfIceCream: state.ice.noOfIceCream,
         resetIce: state.ice.noOfIceCream //Its not neccessary to use it
